@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Preview デバッグテキスト切り替え",
+    "description": "Preview版の上のデバッグテキストを非表示にしたりできます。\nHUD画面でF10を押して切り替えます。\nby YukaYama0311",
+    "version": [ 1, 0, 0 ],
+    "uuid": "0feabfdf-cb58-479b-9d94-63d6eabef311",
+    "min_engine_version": [ 1, 13, 0 ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "description": "",
+      "version": [ 1, 0, 0 ],
+      "uuid": "dd2ec56d-5e15-40f4-baed-e6656e2d0d9c"
+    }
+  ],
+  "subpacks": [
+    {
+      "folder_name": "deforuto_off",
+      "name": "\n§c⚠設定を反映させるにはマイクラを再起動する必要があります!\n\n§r§cデバッグテキストをデフォルトで非表示",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "deforuto_on",
+      "name": "\n§c⚠設定を反映させるにはマイクラを再起動する必要があります!\n\n§r§aデバッグテキストをデフォルトで表示",
+      "memory_tier": 2
+    }
+  ]
+}

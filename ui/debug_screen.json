@@ -1,0 +1,55 @@
+{
+  "namespace": "debug_screen",
+  
+  "special_render": {
+    "type": "custom",
+    "renderer": "debug_screen_renderer",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "debug_text_toggle",
+        "source_property_name": "(not #toggle_state)",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+
+
+  "content_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "debug_text_toggle@common.toggle": {
+              "size": [ 0, 0 ],
+              "anchor_to": "top_right",
+              "anchor_from": "top_right",
+              "$toggle_name": "debug_text_toggle",
+              "layer": 10,
+              "sound_volume": 0,
+    
+              "$unchecked_control": "common.empty_panel",
+              "$unchecked_locked_control": "common.empty_panel",
+              "$checked_locked_control": "common.empty_panel",
+              "$unchecked_locked_hover_control": "common.empty_panel",
+              "$checked_locked_hover_control": "common.empty_panel",
+              "$checked_control": "common.empty_panel",
+              "$checked_hover_control": "common.empty_panel",
+              "$unchecked_hover_control": "common.empty_panel",
+              "$toggle_default_state": "(not $debug_text_default)",
+              "button_mappings": [
+                {
+                  "from_button_id": "button.hide_tooltips",
+                  "to_button_id": "button.menu_select",
+                  "mapping_type": "global"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
